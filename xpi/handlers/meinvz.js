@@ -3,7 +3,7 @@ register({
         name: 'MeinVZ',
         url: 'http://www.meinvz.net/Home',
         domains: ['meinvz.net'],
-        sessionCookieNames: ['s_sess', 's_pers','vz-status'],
+        sessionCookieNames: ['s_sess', 's_pers'],
         processPacket: function () {
             var s_sess = this.firstPacket.cookies['s_sess'];
             this.sessionId = s_sess;

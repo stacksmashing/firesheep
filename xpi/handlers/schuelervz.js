@@ -2,7 +2,7 @@ register({
         name: 'SchuelerVZ',
         url: 'http://www.schuelervz.net/Home',
         domains: ['schuelervz.net'],
-        sessionCookieNames: ['s_sess', 's_pers','vz-status'],
+        sessionCookieNames: ['s_sess', 's_pers'],
         processPacket: function () {
             var s_sess = this.firstPacket.cookies['s_sess'];
             this.sessionId = s_sess;
